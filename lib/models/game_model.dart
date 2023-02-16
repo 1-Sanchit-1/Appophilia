@@ -1,12 +1,10 @@
-// To parse this JSON data, do
-//
-//     final games = gamesFromJson(jsonString);
-
 import 'dart:convert';
 
-List<Games> gamesFromJson(String str) => List<Games>.from(json.decode(str).map((x) => Games.fromJson(x)));
+List<Games> gamesFromJson(String str) =>
+    List<Games>.from(json.decode(str).map((x) => Games.fromJson(x)));
 
-String gamesToJson(List<Games> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+String gamesToJson(List<Games> data) =>
+    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class Games {
   Games({
@@ -36,30 +34,31 @@ class Games {
   String freetogameProfileUrl;
 
   factory Games.fromJson(Map<String, dynamic> json) => Games(
-    id: json["id"],
-    title: json["title"],
-    thumbnail: json["thumbnail"],
-    shortDescription: json["short_description"],
-    gameUrl: json["game_url"],
-    genre: json["genre"],
-    platform: json["platform"],
-    publisher: json["publisher"],
-    developer: json["developer"],
-    releaseDate: DateTime.parse(json["release_date"]),
-    freetogameProfileUrl: json["freetogame_profile_url"],
-  );
+        id: json["id"],
+        title: json["title"],
+        thumbnail: json["thumbnail"],
+        shortDescription: json["short_description"],
+        gameUrl: json["game_url"],
+        genre: json["genre"],
+        platform: json["platform"],
+        publisher: json["publisher"],
+        developer: json["developer"],
+        releaseDate: DateTime.parse(json["release_date"]),
+        freetogameProfileUrl: json["freetogame_profile_url"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "id": id,
-    "title": title,
-    "thumbnail": thumbnail,
-    "short_description": shortDescription,
-    "game_url": gameUrl,
-    "genre": genre,
-    "platform": platform,
-    "publisher": publisher,
-    "developer": developer,
-    "release_date": "${releaseDate.year.toString().padLeft(4, '0')}-${releaseDate.month.toString().padLeft(2, '0')}-${releaseDate.day.toString().padLeft(2, '0')}",
-    "freetogame_profile_url": freetogameProfileUrl,
-  };
+        "id": id,
+        "title": title,
+        "thumbnail": thumbnail,
+        "short_description": shortDescription,
+        "game_url": gameUrl,
+        "genre": genre,
+        "platform": platform,
+        "publisher": publisher,
+        "developer": developer,
+        "release_date":
+            "${releaseDate.year.toString().padLeft(4, '0')}-${releaseDate.month.toString().padLeft(2, '0')}-${releaseDate.day.toString().padLeft(2, '0')}",
+        "freetogame_profile_url": freetogameProfileUrl,
+      };
 }
