@@ -2,17 +2,16 @@
 
 ## Team Name : Flutter-Flux
 
-# Getting Started 
-
-These are a set of instructions to follow for you to setup the project locally and run it.
-
-## Clone your fork
+## Code Clone 
 
 ```bash
-git clone https://github.com/iiitl/geet-hub-community
+git clone https://github.com/1-Sanchit-1/Appophilia.git
 ```
 ## Download Flutter-Flux-App at 
 
 ```bash
 
 ```
+## ScreenShots 
+
+
