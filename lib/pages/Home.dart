@@ -172,7 +172,7 @@ class _HomeState extends State<Home> {
                   context,
                   MaterialPageRoute(
                     builder: (context) =>
-                    game_cate(cat[index]),
+                    game_cate(cat: cat[index],),
                   ));
               // print(list[index]);
             },

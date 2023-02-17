@@ -16,8 +16,8 @@ class _game_cateState extends State<game_cate> {
 
   List<Games> cata = [];
   String? urll;
-  Future<List<Games>?> gameids() async {
-    urll = "https://www.freetogame.com/api/games?category=shooter";
+  Future<List<Games>?> gameids(String cat) async {
+    urll = "https://www.freetogame.com/api/games?category=$cat";
     Response response = await get(Uri.parse(urll!));
     var data = jsonDecode(response.body);
     print(json.decode(response.body).runtimeType);
