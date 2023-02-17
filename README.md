@@ -1,16 +1,18 @@
-# appophilia
+# Appophilia
 
-A new Flutter project.
+## Team Name : Flutter-Flux
 
-## Getting Started
+# Getting Started 
 
-This project is a starting point for a Flutter application.
+These are a set of instructions to follow for you to setup the project locally and run it.
 
-A few resources to get you started if this is your first Flutter project:
+## Clone your fork
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+git clone https://github.com/iiitl/geet-hub-community
+```
+## Download Flutter-Flux-App at 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+
+```
