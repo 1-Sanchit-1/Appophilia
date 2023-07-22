@@ -1,14 +1,30 @@
-import 'package:appophilia/pages/Home.dart';
+import 'package:appophilia/firebase_options.dart';
+import 'package:appophilia/screens/homepage.dart';
+import 'package:appophilia/screens/onBoardingScreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main(){
-  runApp(MaterialApp(
-    title: "Flutter Flux",
-    debugShowCheckedModeBanner: false,
-    theme:  ThemeData(
-      brightness: Brightness.light,
-    ),
-    // darkTheme: ThemeData.dark(),
-    home: Home(),
-  ));
+Future<void> main() async {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Flux',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: homePage(),
+      // onBoarding(),
+    );
+  }
 }
