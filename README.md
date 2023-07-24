@@ -4,7 +4,7 @@
 ```bash
 git clone https://github.com/1-Sanchit-1/Appophilia.git
 ```
-
+<img src="https://user-images.githubusercontent.com/95677816/219655812-df9b4b1f-b26d-421b-89da-33c1aca2c11c.jpeg" height="40%" width="40%" ><img>
 ## ScreenShots 
 ![WhatsApp Image 2023-02-17 at 17 56 55](https://user-images.githubusercontent.com/95677816/219655812-df9b4b1f-b26d-421b-89da-33c1aca2c11c.jpeg)
 ![WhatsApp Image 2023-02-17 at 17 56 54](https://user-images.githubusercontent.com/95677816/219655784-35dea530-14ba-4846-a8ec-a08c9dec85d2.jpeg)
